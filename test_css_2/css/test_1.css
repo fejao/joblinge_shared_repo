@@ -1,0 +1,32 @@
+h1.prg_1 {
+    text-align: center;
+    color: red;
+  }
+  
+p.prg_1 {
+    text-align: center;
+    color: green;
+}
+
+.prg_1 {
+    text-align: left;
+    color: blue;
+}
+
+#prg_1 {
+    text-align: right;
+    color: orange;
+}
+
+.prg_align {
+    text-align: center;
+}
+
+.prg_color {
+    color: lightpink;
+}
+
+h4, h5, h6 {
+    text-align: center;
+    color: red;
+}
