@@ -27,15 +27,15 @@
   
   h1.prg_3 {
     text-align: center;
-    color: yellowgreen;
+    color: #000f08;
     font-size: 300%; 
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    text-decoration: rgb(47, 102, 139);
+    text-decoration:#0d0221;
     text-decoration-line: underline;
     text-decoration-skip: 20;
-    background-color: maroon;
+    background-color: #5c0029;
     background-size: 150%;
   }
 
