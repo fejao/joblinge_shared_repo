@@ -1,0 +1,39 @@
+#all {
+background-color: blueviolet
+}
+.prg_1 {
+    text-align: left;
+    color: red;
+  }
+  
+  p.prg_2 {
+    text-align: center;
+    color: green;
+  }
+  p.prg_3 {
+    text-align: center;
+    color: blue;
+  }
+  h1.prg_1 {
+    animation: textwelle 2s;
+    text-align: center;
+    text-decoration-line: underline; 
+  }
+  #prg_1 {
+    text-align: right;
+    color: blueviolet;
+  }
+  #test {
+    color: yellowgreen;
+  }
+  p.prg_5 {
+    color: rgb(0, 238, 255);
+    text-align: left;
+    background-color: yellow;
+  }
+  p.prg_4 {
+    color: rgba(247, 243, 0, 0.911);
+    text-align: left;
+    direction: initial;
+    background-color: yellowgreen;
+  }
