@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<br>
+<input type="button" value="Total Cliks" onclick="numCLicks()"/>
+<input type="text" id="clicks" readonly="readonly"/>
+ 
+<script>
+
+    var totClicks = 0;
+    function numCLicks() {
+      totClicks += 1;
+        document.getElementById("clicks").value = totClicks;
+    }
+</script>
+ 
+</body>
+</html>
