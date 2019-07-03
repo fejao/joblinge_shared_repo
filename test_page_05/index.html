@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td>
+      <input type="text" id="num1"/>
+    </td>
+    <td>
+      <input type="button" value="+" onclick="sum()"/> <br/>
+      <input type="button" value="-" onclick="minus()"/> <br/>
+      <input type="button" value="*" onclick="multi()"/> <br/>
+      <input type="button" value="/" onclick="divi()"/> <br/>
+      <input type="button" value="^" onclick="expo()"/> <br/>
+    </td>
+    <td>
+      <input type="text" id="num2"/>
+    </td>
+    <td>
+      <!--<input type="button" value="=" onclick="calc()"/> -->
+    </td>
+    <td>
+      <input type="text" id="result" readonly="readonly"/>
+    </td>
+  </tr>
+</table>
+
+<br> 
+<script>
+    function sum() {
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+        let sum = num1 + num2;
+        document.getElementById("result").value = sum;
+    }
+    function minus() {
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+        let sum = num1 - num2;
+        document.getElementById("result").value = sum;
+    }
+    function multi() {
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+        let sum = num1 * num2;
+        document.getElementById("result").value = sum;
+    }
+    function divi() {
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+        let sum = num1 / num2;
+        document.getElementById("result").value = sum;
+    }
+    function expo() {
+        let num1 = Number(document.querySelector("#num1").value);
+        let num2 = Number(document.querySelector("#num2").value);
+
+        var sum = 1;
+        for (var i = 0;  i < num2; i++) { 
+          sum =  sum * num1;
+          console.log(sum);
+        }
+        console.log(sum);
+
+
+        
+        document.getElementById("result").value = sum;
+    }
+    
+</script>
+ 
+</body>
+</html>
