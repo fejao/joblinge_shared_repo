@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td>
+      <input type="text" id="num1"/>
+    </td>
+    <td>
+      <input type="button" value="+" onclick="sum()"/> <br/>
+      <input type="button" value="-" onclick="minus()"/> <br/>
+      <input type="button" value="*" onclick="multi()"/> <br/>
+      <input type="button" value="/" onclick="divi()"/> <br/>
+    </td>
+    <td>
+      <input type="text" id="num2"/>
+    </td>
+    <td>
+      <!-- <input type="button" value="=" onclick="calc()"/> -->
+      =
+    </td>
+    <td>
+      <input type="text" id="result" readonly="readonly"/>
+    </td>
+  </tr>
+</table>
+<br/>
+
+<input type="text" id="num3"/>
+<select style="width: 280px" id="mySelect" name="mySelect">
+  <option selected="">Please Select</option>
+  <option>+</option>
+  <option>-</option>
+  <option>*</option>
+  <option>/</option>
+</select>
+<input type="text" id="num4"/>
+<button type="button" onclick="mySelectFromList()">=</button>
+<input type="text" id="selected" readonly="readonly"/>
+
+<br> 
+<script>
+  function sum() {
+      let num1 = Number(document.querySelector("#num1").value);
+      let num2 = Number(document.querySelector("#num2").value);
+      let sum = num1 + num2;
+      document.getElementById("result").value = sum;
+  }
+  function minus() {
+      let num1 = Number(document.querySelector("#num1").value);
+      let num2 = Number(document.querySelector("#num2").value);
+      let sum = num1 - num2;
+      document.getElementById("result").value = sum;
+  }
+  function multi() {
+      let num1 = Number(document.querySelector("#num1").value);
+      let num2 = Number(document.querySelector("#num2").value);
+      let sum = num1 * num2;
+      document.getElementById("result").value = sum;
+  }
+  function divi() {
+      let num1 = Number(document.querySelector("#num1").value);
+      let num2 = Number(document.querySelector("#num2").value);
+      let sum = num1 / num2;
+      document.getElementById("result").value = sum;
+  }
+  
+  function mySelectFromList() {
+    let num3 = Number(document.querySelector("#num3").value);
+    let num4 = Number(document.querySelector("#num4").value);
+    
+    var indexSelected = document.getElementById("mySelect").selectedIndex;
+    
+    switch (indexSelected) {
+      case 1:
+        myResult = num3 + num4;
+        break;
+      case 2:
+        myResult = num3 - num4;
+        break;
+      case 3:
+        myResult = num3 * num4;
+        break;
+      case 4:
+        myResult = num3 / num4;
+        break;
+      default:
+        myResult = "the answer for everything is 42"
+    }
+    
+    document.getElementById("selected").value = myResult;    
+  }
+</script>
+ 
+</body>
+</html>
