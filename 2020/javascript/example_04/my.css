@@ -1,0 +1,37 @@
+
+/* .london { */
+#london {
+    background-color:black;
+    color:white;
+    padding:20px;
+}
+
+#berlin {
+    background-color:yellow;
+    color:red;
+    padding:100px;
+}
+
+#berlin h2 {
+    color:green;
+}
+
+#paris {
+    background-color:orange;
+    color:blue;
+}
+
+#tt1 {
+    color:red;
+}
+#tt2 {
+    color:purple;
+}
+#tt3 {
+    background-color: royalblue;
+    color:olivedrab;
+    padding: 20px;
+}
+#tt3 h2{
+    color:brown;
+}

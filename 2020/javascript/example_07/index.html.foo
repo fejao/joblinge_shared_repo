@@ -1,0 +1,21 @@
+<html>
+    <script type="text/javascript">
+    function nextpage(){
+    document.getElementById('pageContent').innerHTML = "<object data=\"https://google.de\"></object>" ;
+    }
+    function nextpageb(){
+    // document.getElementById('pageContent').innerHTML = "<object  data=\"file:///london.html\"></object>" ;
+    document.getElementById('pageContent').innerHTML = "<object  data=\"london.html\"></object>" ;
+    }
+    </script>
+    </head>
+    <body style="float:left; overflow:hidden; width: 100%; height: 101%">
+    <nav>
+    <h2 class="hidden">Our navigation</h2>
+    <ul>
+    <li><a onclick="nextpage();">Home</a></li>
+    <li><a onclick="nextpageb();">Contact</a></li>
+    </ul>
+    </nav>
+    <div id="pageContent">Hello motto </div>
+</html>

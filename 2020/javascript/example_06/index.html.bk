@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="my.css">
+        <!-- <script type="text/javascript" src="my_scripts.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").load("demo_test.txt");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="flex-container">
+            <header>
+                <h1>
+                    Cities (Header)
+                </h1>
+            </header>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#" id="load_london">London</a>
+                    </li>
+                    <li>
+                        <a href="#">Paris</a>
+                    </li>
+                    <li>
+                        <a href="#">Tokyo</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="article">
+
+            </article>
+
+            <!-- <div id="topBar">
+                <a href ="#" id="load_home"> HOME </a>
+            </div>
+            <div id ="content">        
+            </div> -->
+
+            <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+            <button>Get External Content</button>
+
+            <footer>
+                This is the Footer
+            </footer>
+        </div>
+        <script>
+            // $(document).ready( function() {
+            //     $("#load_home").on("click", function() {
+            //         $("#content").load("london.html");
+            //     });
+            // });
+            // $("button").click(function(){
+            // $("#load_london").click(function(){
+            //     $("#topBar").load("london.html", function(responseTxt, statusTxt, xhr){
+            //         if(statusTxt == "success")
+            //         alert("External content loaded successfully!");
+            //         if(statusTxt == "error")
+            //         alert("Error: " + xhr.status + ": " + xhr.statusText);
+            //     });
+            // });
+
+
+            // $(document).ready(function(){
+            //     $("button").click(function(){
+            //         $("#div1").load("demo_test.txt");
+            //     });
+            // }); 
+        </script>
+    </body>
+    </html>
