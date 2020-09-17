@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="title">
+        JS Example 01
+    </title>
+</head>
+<body>
+    <h1>Hallo Welt :)</h1>
+    
+    <p id="demo">
+        Click me.
+    </p>
+    <button type="button" id="demo2">
+        Click Me!
+    </button>
+
+    <button type="button" id="demo4">
+        New Title!
+    </button>
+
+    <p id="demo3">
+        Summe mich.
+    </p>
+
+    <script>
+        console.log('Hallo Welt 25.2.2020');
+        //alert("neue alert fenster")
+        
+        document.getElementById("demo").onclick = function() {myFunction()};
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+        }
+
+            document.getElementById("demo2").onclick = function() {myFunction2()};
+            function myFunction2() {
+                alert("neue alert fenster");
+            }
+
+        let mySumme = 0;
+        document.getElementById("demo3").onclick = function() {myFunction3()};
+        function myFunction3() {
+            mySumme = mySumme + 1;
+            //mySumme++;
+            document.getElementById("demo3").innerHTML = mySumme;
+        }
+
+        //let newTitle = "New Title";
+        const newTitle = "ALT Title";
+        document.getElementById("title").innerHTML = newTitle;
+        
+        document.getElementById("demo4").onclick = function() {myFunction4()};
+        function myFunction4() {
+            document.getElementById("title").innerHTML = newTitle;
+        }
+
+        //const const1 = 1;
+        //const1 = const1 + 1;
+        //console.log(const1);
+
+
+
+    </script>
+</body>
+</html>

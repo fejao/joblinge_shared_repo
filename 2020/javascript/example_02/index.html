@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="title">
+        JS Example 01
+    </title>
+
+</head>
+<body>
+    <h1>
+        Hallo Welt :)
+    </h1>
+
+
+    <h2>
+        This is the h2
+    </h2>
+
+    <div style="background-color:black;color:white;padding:20px;" id="oben">
+        <h2>
+            London
+        </h2>
+        <p>
+            London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+        </p>
+    </div>
+    <button type="button" id="demo2">
+        Click Me!
+    </button>
+
+
+    <div style="background-color:green;color:red" id="unten">
+        <h2>
+            Berlin
+        </h2>
+        <p>
+            Berlin is the capital city of Germany.
+        </p>
+    </div>
+    <button type="button" id="demo">
+        Click Me!
+    </button>
+
+
+    <script>
+
+        var summe = 0;
+        var myColor = "black";
+        console.log(summe);
+
+
+        document.getElementById("demo2").onclick = function() {myFunction2()};
+        function myFunction2() {
+            if (summe % 2 != 0) {
+                // document.getElementById("oben").style.backgroundColor = "white";
+                myColor = "white";
+            } else {
+                // document.getElementById("oben").style.backgroundColor = "black";
+                myColor = "black";
+            }
+            document.getElementById("oben").style.backgroundColor = myColor;
+            summe = summe + 1;
+            console.log(summe);
+        }
+
+        document.getElementById("demo2").onmouseover = function() {
+            document.getElementById("oben").style.backgroundColor = "purple";
+        };
+
+        document.getElementById("demo2").onmouseout = function(){
+            document.getElementById("oben").style.backgroundColor = "black";
+        };
+
+        document.getElementById("demo").onclick = function() {myFunction1()};
+        function myFunction1() {
+            document.getElementById("unten").style.backgroundColor = "white";
+        }
+
+    </script>
+</body>
+</html>
